@@ -28,7 +28,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: publish
-      run: dotnet publish BlazorWASM7/BlazorWASM7.Server.csproj -c Release -o release --nologo
+      run: dotnet publish BlazorWASM7/Server/BlazorWASM7.Server.csproj -c Release -o release --nologo
       
     - name: Fix service-worker-assets.js hashes
       working-directory: release/wwwroot
